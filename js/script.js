@@ -4,7 +4,7 @@
 
   // Theme: saved choice, else system preference
   let saved = null; try { saved = localStorage.getItem('theme'); } catch (e) {}
-  root.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  root.dataset.theme = saved || 'dark';
   $('#theme').addEventListener('click', () => {
     root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
