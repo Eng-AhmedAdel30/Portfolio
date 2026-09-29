@@ -43,6 +43,7 @@
       </div>
     </div>
     <figure class="viz" aria-label="Illustration of a data pipeline feeding a dashboard">
+      <img class="photo" src="assets/images/ahmed-adel.webp" alt="Portrait of Ahmed Adel" width="360" height="360">
       <svg viewBox="0 0 420 320" role="img">
         <defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent2)" stop-opacity=".5"/></linearGradient></defs>
         <rect class="panel" x="1" y="1" width="418" height="318" rx="18"/>
@@ -89,58 +90,85 @@
     </div>
     <div class="grid projects" id="projectGrid">
       <article class="card proj feature" data-cat="bi de py">
-        <div class="shot" role="img" aria-label="Screenshot placeholder"><span>Project screenshot · full set on GitHub</span></div>
+        <div class="shot"><img src="assets/images/financial-platform.webp" alt="SSRS executive overview report from the financial data platform" loading="lazy"></div>
         <h3>Financial Data Platform &amp; AI Analytics System</h3>
         <p class="meta">ITI graduation project · Team leader</p>
-        <p>An end-to-end financial data platform, from warehouse to dashboards to an AI assistant.</p>
+        <p>An end-to-end financial data platform, from warehouse to reports to an AI assistant.</p>
         <ul class="work"><li>Designed a data warehouse and ETL pipelines with incremental loading</li><li>Built an XGBoost loan risk model served through FastAPI on Azure</li><li>Added a RAG assistant that turns natural language into SQL queries and visuals</li><li>Created Power BI dashboards and SSRS reports</li></ul>
-        <ul class="tags"><li>Azure SQL</li><li>Microsoft Fabric</li><li>Power BI</li><li>SSRS</li><li>Python</li><li>FastAPI</li></ul>
-        <a class="btn small" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a>
+        <ul class="tags"><li>Azure SQL</li><li>Microsoft Fabric</li><li>Power BI</li><li>SSRS</li><li>Python</li><li>FastAPI</li><li>PowerApps</li></ul>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/ITI_Graduation_Project-E2E-Financial-Data-Platform" target="_blank" rel="noopener">View on GitHub</a></div>
       </article>
       <article class="card proj" data-cat="bi de">
-        <div class="shot" role="img" aria-label="Screenshot placeholder"><span>Project screenshot · full set on GitHub</span></div>
-        <h3>Restaurant Chain Performance Analytics</h3>
-        <p class="meta">Databricks · Spark SQL · Delta Lake</p>
-        <p>Revenue and branch performance analysis over a large multi-source dataset.</p>
-        <ul class="work"><li>Processed 1.5 GB+ of data (11M records) with Spark and Delta Lake</li><li>Unified CSV and JSON sources with ETL pipelines</li><li>Built KPIs such as profit % and hourly trends in Spark SQL</li><li>Delivered a Power BI dashboard using DAX</li></ul>
+        <div class="shot"><img src="assets/images/restaurant-analytics.webp" alt="Power BI overview dashboard for Egyptian restaurant analytics" loading="lazy"></div>
+        <h3>Egyptian Restaurant Analytics: Big Data</h3>
+        <p class="meta">Databricks · Spark SQL · Delta Lake · Medallion architecture</p>
+        <p>Revenue, sales and operations analysis over 11M+ rows (about 1.5 GB) of restaurant data from 2020 to 2025.</p>
+        <ul class="work"><li>Processed 7 CSV and 2 JSON sources with Spark and Delta Lake</li><li>Structured the pipeline as Bronze, Silver and Gold layers ending in a star schema</li><li>Built KPIs such as profit % and hourly trends in Spark SQL</li><li>Delivered a Power BI dashboard using DAX</li></ul>
         <ul class="tags"><li>Databricks</li><li>Spark SQL</li><li>Delta Lake</li><li>Power BI</li><li>DAX</li></ul>
-        <a class="btn small" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/Egyptian-Restaurant-Analytics-Big-Data" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card proj" data-cat="bi py">
+        <div class="shot"><img src="assets/images/airline-delay.webp" alt="Cover page of the US airline delay Power BI dashboard" loading="lazy"></div>
+        <h3>US Airline Delay Dashboard</h3>
+        <p class="meta">Python · Star schema · Power BI</p>
+        <p>Analysis of US Bureau of Transportation Statistics flight data to show the causes and patterns behind airline delays.</p>
+        <ul class="work"><li>Cleaned the raw data in a 12-step Python notebook pipeline</li><li>Modeled it as a star schema</li><li>Built an interactive Power BI dashboard covering overview, delay causes, airlines, routes and airports</li></ul>
+        <ul class="tags"><li>Python</li><li>Pandas</li><li>Power BI</li><li>Star schema</li></ul>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/US-Airline-Delay-dashboard" target="_blank" rel="noopener">View on GitHub</a></div>
       </article>
       <article class="card proj" data-cat="de">
-        <div class="shot" role="img" aria-label="Screenshot placeholder"><span>Project screenshot · full set on GitHub</span></div>
+        <div class="shot"><img src="assets/images/modern-dwh.webp" alt="Data architecture diagram of the modern data warehouse project" loading="lazy"></div>
+        <h3>Modern Data Warehouse (Medallion Architecture)</h3>
+        <p class="meta">SQL Server · Power BI · Course project</p>
+        <p>A hands-on warehouse built while following Baraa's Udemy data warehousing course, from raw ingestion to analytical reporting.</p>
+        <ul class="work"><li>Built Bronze, Silver and Gold layers with SQL scripts</li><li>Created a star schema of dimensions and a fact table</li><li>Wrote exploratory SQL analytics and a Power BI report</li></ul>
+        <ul class="tags"><li>SQL Server</li><li>T-SQL</li><li>ETL</li><li>Star schema</li><li>Power BI</li></ul>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/Building-a-Modern-DataWarehouse-with-Baraa" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card proj" data-cat="de">
+        <div class="shot"><img src="assets/images/gravity-dwh.webp" alt="Star schema of the Gravity Books data warehouse" loading="lazy"></div>
         <h3>Gravity Books Data Warehouse</h3>
         <p class="meta">SQL Server · T-SQL · Kimball methodology</p>
         <p>A data warehouse that turns transactional bookstore data into an analysis-ready model.</p>
         <ul class="work"><li>Designed 9 dimensions and 2 fact tables using Kimball methodology</li><li>Transformed OLTP data into a Galaxy schema</li><li>Built ETL pipelines and handled many-to-many relationships</li></ul>
-        <ul class="tags"><li>SQL Server</li><li>T-SQL</li><li>Dimensional Modeling</li></ul>
-        <a class="btn small" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a>
+        <ul class="tags"><li>SQL Server</li><li>T-SQL</li><li>Dimensional modeling</li><li>ETL</li></ul>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/Gravitybook_DWH" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card proj" data-cat="bi">
+        <div class="shot"><img src="assets/images/excel-projects.webp" alt="PwC-styled Excel call center dashboard" loading="lazy"></div>
+        <h3>Excel Analytics Projects (2 dashboards)</h3>
+        <p class="meta">Excel · Power Pivot</p>
+        <p>Two interactive business dashboards built in Excel with Power Pivot.</p>
+        <ul class="work"><li>Call center performance dashboard: 5,000 calls, 90% resolution rate, with slicers by month and topic</li><li>Logi-Velo global sales dashboard: a star-schema data model over 121,317 rows</li></ul>
+        <ul class="tags"><li>Excel</li><li>Power Pivot</li><li>Slicers</li><li>Star schema</li></ul>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/Excel_Projects" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article class="card proj" data-cat="bi">
+        <div class="shot"><img src="assets/images/tableau-dashboard.webp" alt="Executive overview page of the BlueRidge Tableau dashboard" loading="lazy"></div>
+        <h3>BlueRidge Business Intelligence Dashboard</h3>
+        <p class="meta">Tableau · ITI training project</p>
+        <p>A four-page Tableau dashboard for a fictional event production company, covering executive KPIs, customers, products and suppliers.</p>
+        <ul class="work"><li>Consolidated multi-dimensional business KPIs for non-technical viewers</li><li>Used calculated fields, filters and visual best practices to surface trends</li></ul>
+        <ul class="tags"><li>Tableau</li><li>Calculated fields</li><li>Data visualization</li></ul>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30/Business-Intelligence-Dashboard-Tableau" target="_blank" rel="noopener">View on GitHub</a><a class="btn small" href="https://public.tableau.com/app/profile/ahmed.adel8671/viz/day1_lab00/Executive" target="_blank" rel="noopener">Live dashboard</a></div>
       </article>
       <article class="card proj" data-cat="de">
-        <div class="shot" role="img" aria-label="Screenshot placeholder"><span>Project screenshot · full set on GitHub</span></div>
+        <div class="shot"><span>Screenshots on GitHub</span></div>
         <h3>Telecom Data Integration Pipeline</h3>
         <p class="meta">SSIS · SQL Server · ETL</p>
         <p>Ingestion of telecom transaction files into a SQL Server data warehouse.</p>
         <ul class="work"><li>Loaded CSV sources into the warehouse with SSIS</li><li>Automated transformations, validation rules and audit logging for source-to-target traceability</li></ul>
         <ul class="tags"><li>SSIS</li><li>SQL Server</li><li>ETL</li></ul>
-        <a class="btn small" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a></div>
       </article>
       <article class="card proj" data-cat="py">
-        <div class="shot" role="img" aria-label="Screenshot placeholder"><span>Project screenshot · full set on GitHub</span></div>
+        <div class="shot"><span>Screenshots on GitHub</span></div>
         <h3>Wuzzuf Jobs Scraping &amp; Analysis</h3>
         <p class="meta">Python · Pandas · Web scraping</p>
         <p>Job-market data collected and prepared for analysis.</p>
         <ul class="work"><li>Scraped and processed 50K+ job postings</li><li>Cleaned the data and built structured analytical features</li></ul>
         <ul class="tags"><li>Python</li><li>Pandas</li><li>Beautiful Soup</li></ul>
-        <a class="btn small" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a>
-      </article>
-      <article class="card proj" data-cat="bi">
-        <div class="shot" role="img" aria-label="Screenshot placeholder"><span>Project screenshot · full set on GitHub</span></div>
-        <h3>Executive BI Dashboard</h3>
-        <p class="meta">Tableau · Data visualization</p>
-        <p>KPI dashboards designed for non-technical executives.</p>
-        <ul class="work"><li>Designed 4 interactive Tableau dashboards covering multi-dimensional KPIs</li><li>Used calculated fields, filters and visual best practices to surface trends</li></ul>
-        <ul class="tags"><li>Tableau</li><li>Calculated fields</li></ul>
-        <a class="btn small" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a>
+        <div class="actions"><a class="btn small primary" href="https://github.com/Eng-AhmedAdel30" target="_blank" rel="noopener">View on GitHub</a></div>
       </article>
     </div>
   </div>
@@ -178,18 +206,10 @@
 <section id="certifications" class="sec alt">
   <div class="wrap">
     <h2>Certifications &amp; Courses</h2>
-    <div class="grid certs">
-      <article class="card"><h3>DP-700: Microsoft Certified Fabric Data Engineer Associate</h3><p class="meta">Microsoft</p></article>
-      <article class="card"><h3>Certified Data Engineer (SQL &amp; Python)</h3><p class="meta">DataCamp</p></article>
-    </div>
+    <div class="grid certs"><article class="card cert"><a class="cimg" href="assets/images/cert-dp700.webp" target="_blank" rel="noopener" aria-label="View DP-700: Microsoft Certified Fabric Data Engineer Associate full size"><img src="assets/images/cert-dp700.webp" alt="DP-700: Microsoft Certified Fabric Data Engineer Associate certificate" loading="lazy"></a><h3>DP-700: Microsoft Certified Fabric Data Engineer Associate</h3><p class="meta">Microsoft</p></article><article class="card cert"><a class="cimg" href="assets/images/cert-datacamp-de.webp" target="_blank" rel="noopener" aria-label="View Certified Data Engineer (SQL &amp; Python) full size"><img src="assets/images/cert-datacamp-de.webp" alt="Certified Data Engineer (SQL &amp; Python) certificate" loading="lazy"></a><h3>Certified Data Engineer (SQL &amp; Python)</h3><p class="meta">DataCamp</p></article></div>
     <h3 class="group">Courses</h3>
-    <ul class="courses">
-      <li><span>Data Analyst in Databricks</span><em>DataCamp · 28 hrs</em></li>
-      <li><span>Microsoft SQL Developer</span><em>MaharaTech · 28 hrs</em></li>
-      <li><span>Data Engineering for Beginners: Python, SQL &amp; Airflow</span><em>Kiwilytics · 12 hrs</em></li>
-      <li><span>Ubuntu Linux Essentials</span><em>MaharaTech · 8 hrs</em></li>
-      <li><span>Building a Modern Data Warehouse (Bootcamp)</span><em>Udemy · 7 hrs</em></li>
-    </ul>
+    <div class="grid certs"><article class="card cert"><a class="cimg" href="assets/images/course-databricks.webp" target="_blank" rel="noopener" aria-label="View Data Analyst in Databricks full size"><img src="assets/images/course-databricks.webp" alt="Data Analyst in Databricks certificate" loading="lazy"></a><h3>Data Analyst in Databricks</h3><p class="meta">DataCamp · 28 hrs</p></article><article class="card cert"><a class="cimg" href="assets/images/course-sql-developer.webp" target="_blank" rel="noopener" aria-label="View Microsoft SQL Developer full size"><img src="assets/images/course-sql-developer.webp" alt="Microsoft SQL Developer certificate" loading="lazy"></a><h3>Microsoft SQL Developer</h3><p class="meta">MaharaTech · 28 hrs</p></article><article class="card cert"><a class="cimg" href="assets/images/course-modern-dwh.webp" target="_blank" rel="noopener" aria-label="View Building a Modern Data Warehouse (Bootcamp) full size"><img src="assets/images/course-modern-dwh.webp" alt="Building a Modern Data Warehouse (Bootcamp) certificate" loading="lazy"></a><h3>Building a Modern Data Warehouse (Bootcamp)</h3><p class="meta">Udemy · 7 hrs</p></article><article class="card cert"><a class="cimg" href="assets/images/course-ubuntu.webp" target="_blank" rel="noopener" aria-label="View Ubuntu Linux Essentials full size"><img src="assets/images/course-ubuntu.webp" alt="Ubuntu Linux Essentials certificate" loading="lazy"></a><h3>Ubuntu Linux Essentials</h3><p class="meta">MaharaTech · 8 hrs</p></article></div>
+    <ul class="courses"><li><span>Data Engineering for Beginners: Python, SQL &amp; Airflow</span><em>Kiwilytics · 12 hrs</em></li></ul>
   </div>
 </section>
 
